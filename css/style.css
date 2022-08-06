@@ -1,9 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,500&display=swap");
 a {
   text-decoration: none;
 }
 
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#header {
+  background-color: #262626;
+  padding: 12px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+#header .container2 {
+  width: 95%;
+  margin: auto;
+}
+#header .container2 .logo {
+  width: 15%;
+}
+#header .container2 .box-right {
+  background-color: #82B440;
+  padding: 5px 20px;
+  font-size: 8px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
 #best {
-  background: url(../image/swiper-slide-1.jpg) no-repeat center;
+  background: url(https://ld-wt73.template-help.com/tf/horselin/images/swiper-slide-1.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -11,9 +44,58 @@ a {
   align-items: center;
   justify-content: center;
 }
+#best .nav-menu {
+  width: 79%;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  border-radius: 52px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+}
+#best .nav-menu .symbol {
+  width: 15%;
+}
+#best .nav-menu .nav {
+  width: 65%;
+}
+#best .nav-menu .nav ul li {
+  padding: 20px;
+}
+#best .nav-menu .nav ul li a {
+  position: relative;
+}
+#best .nav-menu .nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #ACD25F;
+  bottom: -200%;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+#best .nav-menu .nav ul li a.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+#best .nav-menu .nav ul li a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+#best .nav-menu .nav ul li i {
+  padding: 0px 5px;
+}
 #best .bestBox {
   text-align: center;
   color: wheat;
+  margin-top: 90px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #best .bestBox span {
@@ -27,6 +109,12 @@ a {
 }
 #best .bestBox a {
   font-size: 14px;
+  margin-top: 40px;
+  display: inline-block;
+  padding: 20px 42px;
+  background-color: #ACD25F;
+  color: white;
+  border-radius: 20px;
 }
 
 @media (max-width: 576px) {
@@ -62,9 +150,11 @@ a {
 }
 #offer .box .riding {
   text-align: center;
+  margin-top: 25px;
 }
 #offer .box .riding h2 {
   font-size: 28px;
+  margin-bottom: 10px;
 }
 #offer .box .riding a {
   color: green;
@@ -73,4 +163,359 @@ a {
 }
 #offer .box .riding a:hover {
   color: black;
+}
+
+.test {
+  margin-top: 130px;
+  background: url(https://ld-wt73.template-help.com/tf/horselin/images/index-img-01-1920x649.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.test .txt-area {
+  text-align: center;
+  width: 45%;
+}
+.test .txt-area h1 {
+  font-size: 47px;
+  margin-bottom: 45px;
+  color: white;
+}
+.test .txt-area p {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 35px;
+  margin-bottom: 36px;
+}
+.test .txt-area h4 {
+  font-size: 26px;
+  color: #ACD25F;
+  margin-bottom: 45px;
+}
+.test .txt-area .profiles {
+  width: 50%;
+  margin-left: 150px;
+}
+.test .txt-area .profiles .firstimg img {
+  border-radius: 50px;
+}
+
+.plans .text-center {
+  margin-top: 90px;
+  margin-bottom: 39px;
+}
+.plans .text-center h1 {
+  font-size: 47px;
+  color: #292929;
+}
+.plans .box-left {
+  width: 29%;
+  text-align: center;
+  position: relative;
+}
+.plans .box-left::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #D3D3D3;
+  z-index: 1;
+}
+.plans .box-left h4 {
+  color: #ACD25F;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+}
+.plans .box-left h2 {
+  font-size: 24px;
+  width: 20%;
+  text-align: left;
+  color: #292929;
+  margin-top: 20px;
+  display: inline-block;
+}
+.plans .box-left h1 {
+  text-align: center;
+  margin-top: -43px;
+  margin-left: 42px;
+  font-size: 72px;
+}
+.plans .box-left p {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: serif;
+  text-align: left;
+}
+.plans .box-left p i {
+  padding: 10px;
+  display: inline-block;
+  color: green;
+}
+.plans .box-left a {
+  border-radius: 100px;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.plans .box-middle {
+  width: 29%;
+  text-align: center;
+  position: relative;
+}
+.plans .box-middle::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #D3D3D3;
+  z-index: 1;
+}
+.plans .box-middle h4 {
+  color: #ACD25F;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+}
+.plans .box-middle h2 {
+  font-size: 24px;
+  width: 20%;
+  text-align: left;
+  color: #292929;
+  margin-top: 20px;
+  display: inline-block;
+}
+.plans .box-middle h1 {
+  text-align: center;
+  margin-top: -43px;
+  margin-left: 42px;
+  font-size: 72px;
+}
+.plans .box-middle p {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: serif;
+  text-align: left;
+}
+.plans .box-middle p i {
+  padding: 10px;
+  display: inline-block;
+  color: green;
+}
+.plans .box-middle a {
+  border-radius: 100px;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.plans .box-right {
+  width: 29%;
+  text-align: center;
+  position: relative;
+}
+.plans .box-right h4 {
+  color: #ACD25F;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+}
+.plans .box-right h2 {
+  font-size: 24px;
+  width: 20%;
+  text-align: left;
+  color: #292929;
+  margin-top: 20px;
+  display: inline-block;
+}
+.plans .box-right h1 {
+  text-align: center;
+  margin-top: -43px;
+  margin-left: 42px;
+  font-size: 72px;
+}
+.plans .box-right p {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: serif;
+  text-align: left;
+}
+.plans .box-right p i {
+  padding: 10px;
+  display: inline-block;
+  color: green;
+}
+.plans .box-right a {
+  border-radius: 100px;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.gallery {
+  margin-top: 200px;
+}
+.gallery .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gallery .title h1 {
+  font-size: 47px;
+}
+.gallery .kingbox .picture {
+  position: relative;
+  z-index: -1;
+  margin-bottom: 10px;
+}
+.gallery .kingbox .picture .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.gallery .kingbox .picture .overlay h1 {
+  padding: 25px 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border: 5px solid red;
+  font-size: 17px;
+  opacity: 1;
+  line-height: 29px;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+.gallery .kingbox .picture .overlay:hover h1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team .text-box {
+  text-align: center;
+  width: 45%;
+  margin: 120px auto;
+}
+.team .text-box h1 {
+  font-size: 47px;
+  margin-bottom: 20px;
+}
+.team .text-box p {
+  color: #7C7C7C;
+  font-size: 20px;
+  line-height: 30px;
+}
+.team .photo {
+  text-align: center;
+}
+.team .photo .box-photo {
+  border: 3px solid red;
+  z-index: -1;
+  position: relative;
+}
+.team .photo .box-photo img {
+  vertical-align: middle;
+}
+.team .photo .icons {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  z-index: 1;
+  display: flex;
+}
+.team .photo a {
+  margin-top: 25px;
+  color: black;
+  display: block;
+  font-size: 26px;
+}
+.team .photo a:hover {
+  color: green;
+}
+.team .photo h4 {
+  margin-top: 20px;
+  color: #7C7C7C;
+  font-size: 17px;
+}
+
+.send {
+  margin-top: 120px;
+  background: url(https://ld-wt73.template-help.com/tf/horselin/images/index-img-02-1920x442.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+.send .passage {
+  text-align: center;
+}
+.send .passage h1 {
+  font-size: 47px;
+  color: white;
+  margin-bottom: 20px;
+}
+.send .passage p {
+  color: white;
+  font-size: 17px;
+}
+.send .passage a {
+  display: inline-block;
+  margin-top: 34px;
+  color: white;
+  padding: 20px 42px;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.news {
+  padding-top: 100px;
+}
+.news .words {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.news .part-left img {
+  vertical-align: middle;
+}
+.news .part-left h5 {
+  padding: 25px 21px 50px 25px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.news .part-left p {
+  font-size: 20px;
+  color: #292929;
+  padding: 25px 21px 50px 25px;
+  margin-top: -35px;
 }/*# sourceMappingURL=style.css.map */
